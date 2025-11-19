@@ -37,17 +37,10 @@ public class Main {
                     editarPet.editarPet(scanner, fr, buscarPet, validacoes);
                     break;
                 case 3:
-                    excluirPet.excluirPet(scanner, fr, buscarPet, validacoes);
+                    excluirPet.excluirPet(scanner, fr, buscarPet, validacoes );
                     break;
                 case 4:
-                    Path pathPet = Paths.get("petsCadastrados");
-                    File[] arquivos = pathPet.toFile().listFiles();
-                    if (arquivos != null) {
-                        System.out.println(" --- LISTANDO TODOS OS PETS --- ");
-                        for (File arquivo : arquivos) {
-                            System.out.println("Arquivos encontrados:" + arquivo.getName());
-                        }
-                    }
+                        PrintMenu.printListaPets();
                     break;
                 case 5:
                     buscarPet.buscarPet(scanner);

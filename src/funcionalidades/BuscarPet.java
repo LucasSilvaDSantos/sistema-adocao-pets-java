@@ -232,6 +232,7 @@ public class BuscarPet {
         }
         return petsFiltrados;
     }
+
     private static void opcoesCriterios(){
         System.out.println("1 - Nome ou Sobrenome");
         System.out.println("2 - Sexo");
