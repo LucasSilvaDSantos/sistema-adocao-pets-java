@@ -12,9 +12,9 @@ import java.util.Scanner;
 public class EditarPet {
     public void editarPet(Scanner input, RepositorioArquivo repositorioArquivo, BuscarPet buscarPet, Validacoes validacoes) {
         System.out.println("\n--- EDITAR PET ---");
-        System.out.println("Primeiro, busque o pet que deseja alterar.");
+        System.out.println("-- Pets Encontrados ---");
 
-        ArrayList<Pet> resultados = buscarPet.buscarPet(input);
+        ArrayList<Pet> resultados = PrintMenu.printListaPets();
 
         if (resultados.isEmpty()) {
             return;

@@ -46,23 +46,22 @@ public class PrintMenu {
         }
     }
 
-    public static void printListaPets() {
+    public static ArrayList<Pet> printListaPets() {
 
         Path pathPet = Paths.get("petsCadastrados");
         File[] arquivos = pathPet.toFile().listFiles();
 
         if (arquivos == null || arquivos.length == 0) {
             System.out.println("Nenhum arquivo encontrado.");
-            return;
+            return null;
         }
 
         ArrayList<Pet> pets = new ArrayList<>();
 
         for (File arquivo : arquivos) {
-            System.out.println("Arquivo encontrado: " + arquivo.getName());
+
         }
 
-        System.out.println("\n--- LENDO CONTEÚDO DOS ARQUIVOS ---\n");
 
         for (File arquivo : arquivos) {
             try (BufferedReader br = new BufferedReader(new FileReader(arquivo))){
@@ -143,5 +142,6 @@ public class PrintMenu {
                         p.getPetRaca());
             }
         }
+        return pets;
     }
 }
