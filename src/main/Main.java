@@ -34,10 +34,10 @@ public class Main {
                     cadastrarPet.cadastrarPet(scanner, fr, validacoes);
                     break;
                 case 2:
-                    editarPet.editarPet(scanner, fr, buscarPet, validacoes);
+                    editarPet.editarPet(scanner, fr, validacoes);
                     break;
                 case 3:
-                    excluirPet.excluirPet(scanner, fr, buscarPet, validacoes );
+                    excluirPet.excluirPet(scanner, fr, validacoes );
                     break;
                 case 4:
                         PrintMenu.printListaPets();

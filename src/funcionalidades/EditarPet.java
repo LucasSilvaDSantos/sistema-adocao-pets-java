@@ -10,9 +10,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class EditarPet {
-    public void editarPet(Scanner input, RepositorioArquivo repositorioArquivo, BuscarPet buscarPet, Validacoes validacoes) {
+    public void editarPet(Scanner input, RepositorioArquivo repositorioArquivo, Validacoes validacoes) {
         System.out.println("\n--- EDITAR PET ---");
-        System.out.println("-- Pets Encontrados ---");
 
         ArrayList<Pet> resultados = PrintMenu.printListaPets();
 
